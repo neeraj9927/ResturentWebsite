@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Figtree:wght@600&family=Lobster&family=Roboto&family=Rubik:wght@300;400&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+/* =================start the navbar styleling===================== */
+nav {
+  background-color: #fcd5e3;
+}
+.logo {
+  cursor: pointer;
+}
+.logo::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #f86f0a;
+  bottom: 0;
+  left: 25px;
+  border-radius: 3px;
+}
+.book_table_btn {
+  background: transparent;
+  outline: none;
+  border-radius: 25px;
+  padding: 3px 25px;
+  border: 3px solid #f86f0a;
+  margin-top: 5px;
+  font-size: 20px;
+}
+.book_table_btn:hover {
+  background-color: #f86f0a;
+  transition: ease 0.5s;
+  color: white;
+}
+.search_icon {
+  cursor: pointer;
+}
+.hero_section {
+  background: #fcd5e3;
+}
+/* =================end the navbar styleling===================== */
+
+/* =================start the hero Section styleling===================== */
+.book_table_button {
+  width: 250px;
+  padding: 10px 13px;
+  border-radius: 40px;
+  display: flex;
+  background: #000;
+}
+.book_table_button:hover {
+  background: #f86f0a;
+  transition: ease 0.5s;
+}
+.book_table_button:hover .circle {
+  background-color: #000;
+  transition: ease 0.5s;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #f86f0a;
+  border-radius: 50%;
+}
+.book_button {
+  background: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 22px;
+}
+/* =================end the hero Section styleling===================== */
+.stroke{
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}

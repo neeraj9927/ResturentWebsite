@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><h3 class="logo fw-bold" style="position: relative">Zomato</h3></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark fs-5 px-3"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark fs-5 px-3"
+                  aria-current="page"
+                  href="#"
+                  >Abouts</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark fs-5 px-3"
+                  aria-current="page"
+                  href="#"
+                  >Menu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark fs-5 px-3"
+                  aria-current="page"
+                  href="#"
+                  >Service</a
+                >
+              </li>
+            </ul>
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#Exple"
+              class="book_table_btn"
+            >
+              Book Table
+            </button>
+            <i class="bi bi-search search_icon fs-4 mx-3"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Book Table form -->
+    <div class="modal fade" id="Exple">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <h1 class="fw-bold">Book Table</h1>
+                    <p>Happy Your Life</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <label for="userName" class="form-label">Full Name</label>
+                    <input type="text" name="" class="form-control w-100" />
+                  </div>
+                  <div class="col-lg-12">
+                    <label for="Date" class="form-label">Date</label>
+                    <input type="date" name="" class="form-control w-100" />
+                  </div>
+                  <div class="col-lg-12">
+                    <label for="userName" class="form-label">Time</label>
+                    <input type="time" name="" class="form-control w-100" />
+                  </div>
+                  <div class="col-lg-12">
+                    <label for="userName" class="form-label"
+                      >Table Number</label
+                    >
+                    <input type="number" name="" class="form-control w-100" />
+                  </div>
+                  <div class="col-lg-12">
+                    <label for="userName" class="form-label"
+                      >Enter Your message</label
+                    >
+                    <textarea class="form-control w-100"></textarea>
+                  </div>
+                  <br />
+                  <div class="col">
+                    <button type="button" class="btn btn-outline-danger">
+                      Send meassage
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Hero Section -->
+    <div class="hero_section py-5">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-12 col-lg-5 d-flex justify-content-center flex-column"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            data-aos-delay="150"
+          >
+            <h1 class="fw-bold display-1 order" style="color: #f87a2e"></h1>
+            <h1 class="fw-bold display-2 food">Favourite Food</h1>
+            <p>
+              Customer feedback is the information, insights, issues, & input
+              shared by your community about their experiences with your
+              company, product, or services
+            </p>
+            <span>Total Order $ :120M</span>
+            <div class="book_table_button my-3">
+              <div class="circle"></div>
+              <button
+                class="book_button"
+                data-bs-toggle="modal"
+                data-bs-target="#Exple"
+              >
+                Book Table Now
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-md-12 col-lg-7"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+            data-aos-delay="150"
+          >
+            <img src="images/slider-img.png" class="w-100" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End hero Section -->
+
+    <!-- Discount card -->
+    <div class="container py-5">
+      <h1 class="text-center fw-bold">What We Offer</h1>
+      <div
+        class="row py-md-5"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+        data-aos-delay="100"
+      >
+        <div
+          class="col-md-6 col-lg-4 col-sm-12 col-12 my-md-3 my-3 my-lg-0 px-5"
+        >
+          <div
+            class="card py-4 d-flex justify-content-center flex-column align-items-center text-center"
+            style="
+              border-radius: 50px;
+              box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+              height: 250px;
+            "
+          >
+            <img
+              src="images/pizza-image.png"
+              style="width: 100px"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-3 fw-bold">Pizza</h5>
+              <p class="card-text fs-5" style="margin: 0">50% Off</p>
+              <p class="fs-5" style="margin: 0">Free Home delivery</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-6 col-lg-4 col-sm-12 col-12 my-md-3 my-3 my-lg-0 mt-lg-0 px-5"
+        >
+          <div
+            class="card py-4 d-flex justify-content-center flex-column align-items-center text-center"
+            style="
+              border-radius: 50px;
+              box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+              height: 250px;
+            "
+          >
+            <img
+              src="images/burger-img.png"
+              style="width: 100px"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-3 fw-bold">Burger</h5>
+              <p class="card-text fs-5" style="margin: 0">60% Off</p>
+              <p class="fs-5" style="margin: 0">Free Home delivery</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-6 col-lg-4 col-sm-12 col-12 my-md-3 my-3 my-lg-0 px-5"
+        >
+          <div
+            class="card py-3 d-flex justify-content-center flex-column align-items-center text-center"
+            style="
+              border-radius: 50px;
+              box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+              height: 250px;
+            "
+          >
+            <img
+              src="images/pizza-two.png"
+              style="width: 100px"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title fs-3 fw-bold">MIxed Veg Food</h5>
+              <p class="card-text fs-5" style="margin: 0">30% Off</p>
+              <p class="fs-5" style="margin: 0">Free Home delivery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Discount card -->
+
+    <!--Blog -->
+    <div class="container">
+      <h1 class="text-center fw-bold">Blog & Insights</h1>
+      <div
+        class="row py-md-5"
+        data-aos="fade-left"
+        data-aos-duration="3000"
+        data-aos-delay="100"
+      >
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 px-5">
+          <div
+            class="card my-md-3 my-3 my-lg-0 py-5 px-5 d-flex justify-content-center align-items-center flex-column text-center"
+            style="
+              border-radius: 50px;
+              border: none;
+              box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <img
+              src="images/fast-food.png"
+              style="width: 8rem"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">FAST FOOD</h5>
+              <p class="card-text">
+                Love and food: It is all about dinenos restaurant
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 px-5">
+          <div
+            class="card my-md-3 my-3 my-lg-0 py-5 px-5 d-flex justify-content-center align-items-center flex-column text-center"
+            style="
+              border-radius: 50px;
+              border: none;
+              box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <img
+              src="images/dinner.png"
+              style="width: 8rem"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">DINNER</h5>
+              <p class="card-text">
+                Enjoy an exceptional journey of taste of joy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 px-5">
+          <div
+            class="card my-md-3 my-3 my-lg-0 py-5 px-5 d-flex justify-content-center align-items-center flex-column text-center"
+            style="
+              border-radius: 50px;
+              border: none;
+              box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <img
+              src="images/resturent.png"
+              style="width: 8rem"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">RESTAURANT</h5>
+              <p class="card-text">
+                The opportunity to work abroad is a prospect, one
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog -->
+
+    <!-- allInformation -->
+    <div class="allInformation bg-dark">
+      <div class="container">
+        <div
+          class="row py-4 text-light"
+          data-aos="flip-down"
+          data-aos-duration="3000"
+          data-aos-delay="100"
+        >
+          <div class="col-2 award_win py-5 px-5">
+            <h1 class="m-0 display-1 stroke">10</h1>
+            <p class="m-0">Awards Win</p>
+          </div>
+          <div class="col-2 award_win py-5 px-5 mx-5">
+            <h1 class="m-0 display-1 stroke">5k</h1>
+            <p class="m-0">Daily Order</p>
+          </div>
+          <div class="col-2 award_win py-5 px-5 mx-3">
+            <h1 class="m-0 display-1 stroke">99</h1>
+            <p class="m-0">Members</p>
+          </div>
+          <div class="col-2 award_win py-5 px-5 mx-3">
+            <h1 class="m-0 display-1 stroke">100</h1>
+            <p class="m-0">Menu & Dish</p>
+          </div>
+          <div class="col-2 award_win py-5 px-5 mx-3">
+            <h1 class="m-0 display-1 stroke">25</h1>
+            <p class="m-0">Specialities</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End allInformation -->
+
+    <!-- Full Menu Card -->
+    <div class="container py-5">
+      <h1 class="text-center fw-bold py-2">Full Menu Item</h1>
+      <div class="row py-3 border border-warning rounded">
+        <div class="col-lg-6" data-aos="zoom-in">
+          <h3>Neapolitan Pizza</h3>
+          <div class="marina_pizza d-flex mt-4">
+            <img src="images/ai-ver-pizza.png" style="height: 100px" alt="" />
+            <div class="content px-3 py-2">
+              <h4>Marinara $12 $14</h4>
+              <p class="m-0">
+                Marinara sauce, Garlic, Olive oil, Basil, Oregano
+              </p>
+            </div>
+          </div>
+          <div class="marina_pizza d-flex mt-5">
+            <img
+              src="images/ai-ver-pizza-two.png"
+              style="height: 100px"
+              alt=""
+            />
+            <div class="content px-3 py-2">
+              <h4>Margherita $12 $14</h4>
+              <p class="m-0">
+                San Marzano tomato sauce, Mozzarella di bufala, Olive Oil
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-6"
+          data-aos="zoom-out"
+          data-aos-duration="3000"
+          data-aos-delay="100"
+        >
+          <h3>American Pizza</h3>
+          <div class="marina_pizza d-flex mt-4">
+            <img src="images/ai-verli-3.png" style="height: 100px" alt="" />
+            <div class="content px-3 py-2">
+              <h4>California Style $15 $18</h4>
+              <p class="m-0">Tomato sauce, Mozzarella, Salmon, Garlic</p>
+            </div>
+          </div>
+          <div class="marina_pizza d-flex mt-5">
+            <img
+              src="images/ai-ver-pizza-two-four.png"
+              style="height: 100px"
+              alt=""
+            />
+            <div class="content px-3 py-2">
+              <h4>California Style $15 $18</h4>
+              <p class="m-0">Tomato sauce, Mozzarella, Salmon, Garlic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-3 border border-warning rounded mt-4">
+        <h3 class="text-center">Italian Pizza</h3>
+        <div class="col-lg-6" data-aos="zoom-in-right">
+          <div class="marina_pizza d-flex mt-4">
+            <img src="images/pizza-three.png" style="height: 100px" alt="" />
+            <div class="content px-3 py-2">
+              <h4>Ai Broccoli $12 $14</h4>
+              <p class="m-0">Tomato sauce, Mozzarella, Salmon Garlic</p>
+            </div>
+          </div>
+          <div class="marina_pizza d-flex mt-5">
+            <img
+              src="images/marginata-pizza.png"
+              style="height: 100px"
+              alt=""
+            />
+            <div class="content px-3 py-2">
+              <h4>Caprese $12 $25</h4>
+              <p class="m-0">Tomato sauce, Mozzarella, Salmon Garlic</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-6"
+          data-aos="zoom-in-left"
+          data-aos-duration="3000"
+          data-aos-delay="100"
+        >
+          <div class="marina_pizza d-flex mt-4">
+            <img
+              src="images/califonio-style.png"
+              style="height: 100px"
+              alt=""
+            />
+            <div class="content px-3 py-2">
+              <h4>Ai Broccoli $8 $22</h4>
+              <p class="m-0">Tomato sauce, Mozzarella, Salmon Garlic</p>
+            </div>
+          </div>
+          <div class="marina_pizza d-flex mt-5">
+            <img
+              src="images/califonio-style-two.png"
+              style="height: 100px"
+              alt=""
+            />
+            <div class="content px-3 py-2">
+              <h4>Cheeseburger Style $6 $18</h4>
+              <p class="m-0">Tomato sauce, Mozarella, Cherry tomatoes</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="zoom-in-right">
+          <div class="marina_pizza d-flex mt-4">
+            <img
+              src="images/califonio-style.png"
+              style="height: 100px"
+              alt=""
+            />
+            <div class="content px-3 py-2">
+              <h4>Italian $2 $10</h4>
+              <p class="m-0">Tomato sauce, Mozzarella, Salmon Garlic</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="zoom-in-left">
+          <div class="marina_pizza d-flex mt-4">
+            <img src="images//cypre-pizza.png" style="height: 100px" alt="" />
+            <div class="content px-3 py-2">
+              <h4>Caprese $18 $40</h4>
+              <p class="m-0">Tomato sauce, Mozzarella, Salmon Garlic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Full Menu Card -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted py-3">
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <h3 class="logo text-light" style="position: relative">
+                  Zomato
+                </h3>
+              </h6>
+              <p class="text-light">
+                We use cookies to provide you with a good website experience. By
+                clicking on or navigating the site, you agree to allow us to
+                collect information through cookies. We do not store any
+                personal information. The cookies is used to give. you the
+                website .
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div
+              class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 text-light text-center"
+            >
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">About</h6>
+              <p>
+                <a href="#!" class="text-reset">History</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Owr Team</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Brand Guidelines</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Terms & Condition</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Privacy Policy</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div
+              class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4 text-light text-center"
+            >
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Services</h6>
+              <p>
+                <a href="#!" class="text-reset">How to Order</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Our Product</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Order Status</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Promo</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Payment Method</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div
+              class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4 text-light text-lg-end text-md-center"
+            >
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Follow</h6>
+              <p>Facebook</p>
+              <p>Twitter</p>
+              <p>Instagram</p>
+              <p>Whatsapps</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+    </footer>
+    <!--End Footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11">
+
+    </script>
+
+    <script>
+      var typed = new Typed(".order", {
+          strings: ["Order Your"],            
+          typeSpeed: 250,
+          loop: false,     
+          cursorChar: "",
+      });
+  </script>
+
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>
