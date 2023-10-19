@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Figtree:wght@600&family=Lobster&family=Roboto&family=Rubik:wght@300;400&display=swap");
 
-* {
+*{
   font-family: "Roboto", sans-serif;
 }
 /* =================start the navbar styleling===================== */
 nav {
   background-color: #fcd5e3;
+}
+.navbar_background{
+  background-color: #f86f0a;
+  transition: ease-in-out .5s;
 }
 .logo {
   cursor: pointer;
