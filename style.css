@@ -40,6 +40,11 @@ nav {
 .hero_section {
   background: #fcd5e3;
 }
+@media (max-width:768px) {
+  .logo::after {
+    left: 15px;
+  }
+}
 /* =================end the navbar styleling===================== */
 
 /* =================start the hero Section styleling===================== */
@@ -78,3 +83,24 @@ nav {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
+/* =================Strat the footer styleling===================== */
+.footer_logo{
+  position: relative;
+}
+.footer_logo::after{
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #f86f0a;
+  bottom: 0;
+  left: 25px;
+  border-radius: 3px;
+}
+@media (max-width:592px) {
+  .footer_logo::after{
+    left: 155px;
+  }
+}
+/* =================End the footer styleling===================== */
+
