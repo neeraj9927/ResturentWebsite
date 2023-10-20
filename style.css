@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Figtree:wght@600&family=Lobster&family=Roboto&family=Rubik:wght@300;400&display=swap");
 
-*{
+* {
   font-family: "Roboto", sans-serif;
 }
 /* =================start the navbar styleling===================== */
 nav {
-  background-color: #fcd5e3;
+  background-color: #fcd5e3 !important;
+  height: 60px;
 }
-.navbar_background{
-  background-color: #f86f0a;
-  transition: ease-in-out .5s;
+.navbar_background {
+  background-color: #ffffff !important;
+  transition: ease-in-out 0.5s;
+  color: #fff;
 }
+.nav-link {
+  color: black !important;
+}
+
 .logo {
   cursor: pointer;
 }
@@ -44,7 +50,7 @@ nav {
 .hero_section {
   background: #fcd5e3;
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .logo::after {
     left: 15px;
   }
@@ -81,17 +87,17 @@ nav {
   font-size: 22px;
 }
 /* =================end the hero Section styleling===================== */
-.stroke{
+.stroke {
   color: black;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 /* =================Strat the footer styleling===================== */
-.footer_logo{
+.footer_logo {
   position: relative;
 }
-.footer_logo::after{
+.footer_logo::after {
   position: absolute;
   content: "";
   width: 50px;
@@ -101,10 +107,14 @@ nav {
   left: 25px;
   border-radius: 3px;
 }
-@media (max-width:592px) {
-  .footer_logo::after{
+@media (max-width: 592px) {
+  .footer_logo::after {
     left: 155px;
   }
 }
+@media (max-width: 768px) {
+  .bg_ul {
+    background: #f40909;
+  }
+}
 /* =================End the footer styleling===================== */
-
