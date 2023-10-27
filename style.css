@@ -50,6 +50,9 @@ nav {
 .hero_section {
   background: #fcd5e3;
 }
+.nav-link:hover{
+  color: #f86f0a !important;
+}
 @media (max-width: 768px) {
   .logo::after {
     left: 15px;
