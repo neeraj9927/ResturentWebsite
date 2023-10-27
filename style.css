@@ -51,7 +51,7 @@ nav {
   background: #fcd5e3;
 }
 .nav-link:hover{
-  color: #f86f0a !important;
+  color: #0e0af8 !important;
 }
 @media (max-width: 768px) {
   .logo::after {
