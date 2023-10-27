@@ -4,10 +4,8 @@ let nav_link = document.querySelectorAll(".nav-link");
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 700) {
     navbar.classList.add("navbar_background");
-    nav_link.classList.add("nav_link_active");
   } else {
     navbar.classList.remove("navbar_background");
-    nav_link.classList.remove("nav_link_active");
   }
 });
 
@@ -17,3 +15,23 @@ var typed = new Typed(".order", {
   loop: false,
   cursorChar: "",
 });
+
+
+// back to top btn
+var backtoTopButton = document.getElementById('backtoTopButton');
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 500) {
+        backtoTopButton.style.display = "block";
+    }
+    else{
+        backtoTopButton.style.display = "none";
+    }
+})
+
+backtoTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
+// End back to top btn
